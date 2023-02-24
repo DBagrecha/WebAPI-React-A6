@@ -11,7 +11,7 @@ class employeeService {
   }
 
   create(data: employee) {
-    return http.post<employee>("/Emp", data);
+    return http.post<employee>("/Emp/add", data);
   }
 
   update(data: employee, id: any) {
